@@ -2,7 +2,7 @@
 
 const Table1 = () => {
     return (
-        <div className="min-w-screen overflow-x-auto">
+        <div className="min-w-screen overflow-auto min-h-screen -ml-1">
             <div className="col-md-12">
                 {/* <style type="text/css">{`
         body{
@@ -59,7 +59,7 @@ const Table1 = () => {
                                         </tr>
                                         <tr>
                                             <td className="text-left">(সংশোধিত)</td>
-                                            <td className="text-right input_bangla">ক্রমিক নং 686423008710</td>
+                                            <td className="text-right input_bangla">ক্রমিক নং ৬৮৬৪২৩০০৮৭১০</td>
                                         </tr>
                                         <tr>
                                             <td className="text-center" colSpan="2">
@@ -134,9 +134,9 @@ const Table1 = () => {
                                 </thead>
                                 <tbody style={{ height: '21px' }}>
                                     <tr>
-                                        <td className="b1 input_bangla">1</td>
-                                        <td className="b1 input_bangla">মোঃ আতিকুর রহমান</td>
-                                        <td className="b1 input_bangla text-right">0.5</td>
+                                        <td className="b1 input_bangla text-center">১</td>
+                                        <td className="b1 input_bangla text-center">মোঃ আতিকুর রহমান</td>
+                                        <td className="b1 input_bangla text-center">০.৫</td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -150,9 +150,9 @@ const Table1 = () => {
                                 </thead>
                                 <tbody style={{ height: '21px' }}>
                                     <tr>
-                                        <td className="b1 input_bangla">2</td>
-                                        <td className="b1 input_bangla">ফরিদা আক্তার</td>
-                                        <td className="b1 input_bangla text-right">0.5</td>
+                                        <td className="b1 input_bangla text-center">২</td>
+                                        <td className="b1 input_bangla text-center">ফরিদা আক্তার</td>
+                                        <td className="b1 input_bangla text-center">০.৫</td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -173,10 +173,10 @@ const Table1 = () => {
                                     </thead>
                                     <tbody style={{ height: '21px' }}>
                                         <tr>
-                                            <td className="b1 input_bangla">1</td>
-                                            <td className="b1 input_bangla">921</td>
-                                            <td className="b1">নাল( কৃষি২)</td>
-                                            <td className="b1 input_bangla">8.00000</td>
+                                            <td className="b1 input_bangla text-center">১</td>
+                                            <td className="b1 input_bangla text-center">৯২১</td>
+                                            <td className="b1 text-center">নাল( কৃষি২)</td>
+                                            <td className="b1 input_bangla text-center">৮.০০০০০</td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -185,7 +185,7 @@ const Table1 = () => {
                                     <tbody>
                                         <tr>
                                             <td className="b1 text-center" style={{ width: '50%' }}>সর্বমোট জমি (শতক)</td>
-                                            <td className="b1 input_bangla" style={{ width: '50%' }}>8</td>
+                                            <td className="b1 input_bangla text-center" style={{ width: '50%' }}>৮</td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -203,7 +203,7 @@ const Table1 = () => {
                                                 <td className="text-center w-fit p-2 border">হাল <br /> দাবি</td>
                                                 <td className="text-center w-fit p-2 border">মোট <br /> দাবি</td>
                                                 <td className="text-center w-fit p-2 border">মোট <br /> আদায়</td>
-                                                <td className="text-center w-fit p-2 border">মোট <br/> বকেয়া</td>
+                                                <td className="text-center w-fit p-2 border">মোট <br /> বকেয়া</td>
                                                 <td className="text-center w-fit p-2 border">মন্তব্য</td>
                                             </tr>
                                             <tr>
@@ -229,7 +229,7 @@ const Table1 = () => {
                                             <p style={{ margin: '0 !important' }}></p>
                                             <p style={{ margin: '0 !important' }}>নোট: সর্বশেষ কর পরিশোধের সাল - ১৩৮৪ থেকে ১৪২৯</p>
                                             <p></p>
-                                            <p className="input_bangla pt-2"> চালান নং : 2223-0010857280</p>
+                                            <p className="input_bangla pt-2"> চালান নং : ২২২৩-০০১০৮৫৭২৮০</p>
                                             <p className="pt-4"> তারিখ : </p>
                                             <div style={{ marginTop: '-24px', marginLeft: '10px' }}>
                                                 <p style={{ width: '115px', padding: '0', margin: '0', marginLeft: '38px', marginBottom: '2px' }}>২৫ পৌষ ১৪২৯</p>
@@ -257,7 +257,9 @@ const Table1 = () => {
                     </div>
                 </div>
             </div>
-
+            <div className="mx-auto text-center hidden">
+                <button className="px-5 py-3 font-bold  bg-teal-800 text-white rounded-xl">Print</button>
+            </div>
         </div>
     );
 };

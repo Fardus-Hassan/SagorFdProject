@@ -5,11 +5,11 @@ import Footer from '../Sheared/Footer';
 const Root = () => {
     return (
         <div>
-            <NavBar></NavBar>
+            {/* <NavBar></NavBar> */}
             <div className='w-[95%] mx-auto'>
             <Outlet></Outlet>
             </div>
-            <Footer></Footer>
+            {/* <Footer></Footer> */}
         </div>
     );
 };
