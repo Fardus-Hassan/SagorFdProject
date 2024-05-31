@@ -1,3 +1,44 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body{
+  font-family: "kalpurush",Arial,sans-serif;
+  font-size: 13px !important;
+  line-height: 1.2;
+  color: #333;
+  background-color: #fff;
+}
+.dotted_botton{
+  border:none;
+  border-bottom:1px dotted #000;
+  background-color:#fff;
+}
+.border_none{
+  border-top: none !important;
+}
+.table-bordered {
+  border: 1px solid #ddd;
+}
+.qrcode-print{
+  width:100%;
+  display: list-item;
+  list-style-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFIAAABSAQMAAAD94hHYAAAABlBMVEX///8AAABVwtN+AAAACXBIWXMAAA7EAAAOxAGVKw4bAAABHklEQVQokZXSMapEIQwF0IDtBbcSsBXcesA2kK0ItoF837xh5ulUP9URwiVqiP5ZOToxCsJ3g6xNSy447H0iKpuetlJGl1+LETN+TNqTpXHnf51DX3XP8/UqrEB/j/1x9tBENgvvRuNEwVrGYZtRk90zP5ykDI3qjQ+3qMIpvXoeXidDLaCxGxLr+j2u6Z7OmnQ9iU7shrsNDgk9TJy5BXgcFq+SUKrvzg3JjWbF4STIHN18N1q2EvPOfDj1oUVStLobuRACdWB3nsHrp+/8p0tr7Ly+ezfgjTpNq4cLqoSw4zBGIlqRsvu6ZfMC0O4cxlMVV+bTIBFtpFfPZrccwyLktKLE6IYfe899Uj1Mysho733+eO3wWr8m6rv/WX9k4Fu8Hn/TVgAAAABJRU5ErkJggg==);
+  list-style-position: inside;
+  background-repeat: no-repeat;
+}
+.b1 {border: 1px dotted; padding: 2px;}
+
+
+@page {
+  size: a4; /* auto is the initial value */
+  margin: 0mm; /* this affects the margin in the printer settings */
+}
+html{
+  background-color: #FFFFFF; 
+  margin: 0px; /* this affects the margin on the html before sending to printer */
+}
+body{
+  border: solid 0px blue;
+  margin: 0mm; /* margin you want for the content */
+}
